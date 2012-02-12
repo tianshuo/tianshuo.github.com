@@ -17,19 +17,20 @@
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 	<script>
-	$(function(){
-		if (screen.width!=320||screen.width!=640){
-			$("#mobilecontent").addClass("nomobile");
-		}
-	});
+	$(document).bind("mobileinit", function(){
+		$.mobile.touchOverflowEnabled=true;
+		$.mobile.loadingMessage="载入中";
+	}
+
 	</script>
 </head> 
 
-<body>
-<div id="container"> 
-<div id="mobilecontent">
-<iframe  src="splash.html" width="320" height="480" frameBorder="0"></iframe>
-</div>
-</div>
+<body style=""> 
+<div data-role="page">
+	<div id="splash-container">
+	<a href="home.html" data-transition="fade">
+	<img id="splash" src="images/splash1.jpg"  /></a>
+	</div>
+</div><!-- /page -->
 </body>
 </html>

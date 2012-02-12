@@ -1,0 +1,33 @@
+.nomobile{
+	position:relative;
+	top: 50%;
+	height:635px;
+	width:371px;
+	padding-left:64px;
+	padding-top:144px;
+	margin: -385px auto 0 auto;
+
+	background-image:url('images/iphone2.png');
+}
+#container{
+	position:relative;
+	height:100%;
+	width:100%;
+}
+
+body {
+	background-color:#fff;
+	height:100%;
+	width:100%;
+}
+
+#splash{
+	height:100%;
+	width:100%;
+}
+
+#splash-container{
+	height:100%;
+	width:100%;
+	overflow:hidden;	
+}
