@@ -22,7 +22,7 @@ body {
 	min-height:100%;
 	min-width:100%;
 }
-
+/* Splash */
 #splash{
 	min-height:480px;
 	height:100%;
@@ -36,6 +36,45 @@ body {
 	overflow:hidden;	
 }
 
+/* Navbar */
+
+#navbar .ui-btn .ui-btn-inner { 
+	padding-top: 40px !important; 
+}
+#navbar .ui-btn .ui-icon { 
+	width: 30px!important;
+	height: 30px!important;
+	margin-left: -15px !important;
+	box-shadow: none!important;
+	-moz-box-shadow: none!important;
+	-webkit-box-shadow: none!important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+#nav_home .ui-icon {
+	background:  url(images/icons/53-house.png) 50% 50% no-repeat;
+	background-size: 24px 24px;
+}
+
+#nav_culture .ui-icon {
+	background:  url(images/icons/96-book.png) 50% 50% no-repeat;
+	background-size: 18px 24px;
+}
+#nav_video .ui-icon {
+	background:  url(images/icons/46-movie-2.png) 50% 50% no-repeat;
+	background-size: 20px 23px;
+}
+#nav_products .ui-icon {
+	background:  url(images/icons/80-shopping-cart.png) 50% 50% no-repeat;
+	background-size: 28px 22px;
+}
+#nav_try .ui-icon {
+	background:  url(images/icons/07-map-marker.png) 50% 50% no-repeat;
+	background-size: 16px 26px;
+}
+
+/* Home */
 .carousel0 #home-top{
 	-webkit-transform:translate3d(0,0,0);
 }
@@ -47,6 +86,14 @@ body {
 	-webkit-transform:translate3d(-640px,0,0);
 }
 
+.carousel0 #home-marker{
+	background-position:0px;
+}
+.carousel1 #home-marker{
+	background-position:18px;
+}.carousel2 #home-marker{
+	background-position:36px;
+}
 
 #home-top{
 	width: 960px;
@@ -55,8 +102,27 @@ body {
 	-webkit-transition: -webkit-transform 0.5s;
 	-webkit-animation:
 		carousel1 0.5s 3s infinite ease-out forward;
+	position:relative;
 }
 
+#home-marker{
+	position:relative;
+	width:54px;
+	height:15px;
+	margin:0 auto -15px;
+	top:-20px;
+	background-image:url('images/dots.png');	
+}
+
+#home-ad{
+}
 .ui-content {
 	padding:0px;
+}
+#home-products {
+	width:535px;
+}
+
+#home-products img{
+	padding-right:1px;
 }
