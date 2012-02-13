@@ -125,4 +125,11 @@ body {
 
 #home-products img{
 	padding-right:1px;
+	width:106px;
+	height:106px;
+}
+
+/* Culture */
+.padme {
+	padding:15px;
 }

@@ -7,32 +7,32 @@
 <meta name="MobileOptimized" content="320"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="apple-touch-icon" href="im/h-apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="apple-touch-startup-image" href="images/home-ad.png">
+<link rel="apple-touch-startup-image" href="img/loading-splash.png">
 	<title>茶道</title> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 	<link rel="stylesheet" href="style.css" />
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 	<script>
-	$(document).bind("mobileinit", function(){
-		$.mobile.touchOverflowEnabled=true;
-		$.mobile.loadingMessage="载入中";
-		$.mobile.fixedToolbars.setTouchToggleEnabled(false);
-		$.mobile.fixedToolbars.show(true);
-		$.mobile.loadPage("home.html");
-	}
-
+	$(function(){
+		if (screen.width!=320||screen.width!=640){
+			$("#mobilecontent").addClass("nomobile");
+		}
+	});
 	</script>
 </head> 
 
-<body style=""> 
-<div data-role="page">
-	<div id="splash-container">
-	<a href="home.html" data-transition="fade">
-	<div id="splash" ></div></a>
-	</div>
+<body> 
+<div data-role="page" data-fullscreen="true">
+	<div data-role="content">	
+		<a href="videos.html" data-rel="back"><img src="images/video.jpg" /></a>
+	</div><!-- /content -->
+	
+	
+	
 </div><!-- /page -->
 </body>
 </html>
