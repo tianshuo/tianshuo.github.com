@@ -16,36 +16,39 @@
 	<link rel="stylesheet" href="style.css" />
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-	<script>
-	$(function(){
-		if (screen.width!=320||screen.width!=640){
-			$("#mobilecontent").addClass("nomobile");
-		}
-	});
-	</script>
 </head> 
 
 <body> 
-<div data-role="page">
-
+<div id="home-page" data-role="page">
+	<script>
+	$("#home-page").live("pagecreate",function(){
+		var carousel=["carousel0","carousel1","carousel2"];
+			setInterval(function(){
+				var now=carousel.shift();
+				carousel[2]=now;
+				$("#home-carousel").removeClass("carousel0 carousel1 carousel2")
+					.addClass(now);
+			},3000);
+	});
+	</script>
 	<div data-role="header" data-theme="a">
 		<h1>茶道</h1>
 	</div><!-- /header -->
 
-	<div data-role="content">	
-		<p>This is a single page boilerplate template that you can copy to build you first jQuery Mobile page. Each link or form from here will pull a new page in via Ajax to support the animated page transitions.</p>		
-		<p>Just view the source and copy the code to get started. All the CSS and JS is linked to the jQuery CDN versions so this is super easy to set up. Remember to include a meta viewport tag in the head to set the zoom level.</p>
-		<p>This template is standard HTML document with a single "page" container inside, unlike a <a href="multipage-template.html" data-ajax="false">multi-page template</a> that has multiple pages within it. We strongly recommend building your site or app as a series of separate pages like this because it's cleaner, more lightweight and works better without JavaScript.</p>
+	<div data-role="content">
+		<div id="home-carousel">	
+			<div id="home-top"> </div>
+		</div>
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
 	<ul>
-		<li><a href="index.html" class="ui-btn-active">首页</a></li>
-		<li><a href="index.html">茶文化</a></li>
-		<li><a href="index.html">茶道</a></li>
-		<li><a href="index.html">茶叶</a></li>
-		<li><a href="index.html">品茶</a></li>
+		<li><a href="home.html" class="ui-btn-active">首页</a></li>
+		<li><a href="culture.html">茶文化</a></li>
+		<li><a href="video.html">茶道</a></li>
+		<li><a href="products.html">茶叶</a></li>
+		<li><a href="try.html">品茶</a></li>
 	</ul>
 	</div>
 </div><!-- /navbar -->
