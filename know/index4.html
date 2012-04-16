@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <title>知识管理平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="tianshuo">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/mystyle.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body class="wood">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">知识管理平台</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+			<li><a>搜索</a></li>
+            <li><form class="navbar-search" action="" >
+              <input type="text" class="search-query span2" placeholder="查找页面或者作者" data-provide="typeahead" data-items="6" data-source='["初一数学", "初一语文", "初一生物", "初一地理", "初一历史", "初一政治", "初一体育", "初一计算机", "初一美术", "初一音乐", "初二数学", "初二语文", "初二物理", "初二生物", "初二地理", "初二历史", "初二政治", "初二体育", "初二计算机", "初二美术", "初二音乐", "初三数学", "初三语文", "初三物理", "初三化学", "初三生物", "初三地理", "初三历史", "初三政治", "初三体育", "初三计算机", "初三美术", "初三音乐", "高一数学", "高一语文", "高一物理", "高一化学", "高一生物", "高一地理", "高一历史", "高一政治", "高一体育", "高一计算机", "高一美术", "高一音乐", "高二数学", "高二语文", "高二物理", "高二化学", "高二生物", "高二地理", "高二历史", "高二政治", "高二体育", "高二计算机", "高二美术", "高二音乐", "高三数学", "高三语文", "高三物理", "高三化学", "高三生物", "高三地理", "高三历史", "高三政治", "高三体育", "高三计算机", "高三美术", "高三音乐"]'>
+            </form></li>
+            </ul>
+
+
+            <ul class="nav pull-right">
+			<li><a href="#about" >消息 <span class="label label-warning">12</span></a></li>
+            <li class="divider-vertical"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">帐号 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">袁腾飞 老师</a></li>
+                <li><a href="#">个人资料</a></li>
+                <li class="divider"></li>
+                <li><a href="#">退出</a></li>
+              </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container whitepage">
+	 <div class="container-inner">
+      <div class="row">
+		  <div class="">
+			  <div class="hero-unit head">
+				<div class="back"  unselectable="on">教务</div>
+
+				<h1>高三历史教研组</h1>
+
+				<p>请各位老师将你们的课件和教案汇总到这里。历史组长：司马迁</p>
+			  </div>
+		  </div>
+	 </div>
+	 <div class="row">
+		  <div class="span3">
+		  				
+			<div class="well ">
+				<h2>主编</h2>
+				<div class="row-fluid">
+				  <div class="span6">
+					<img src="img/lishi.png" />
+				  </div>
+				  <div class="span5">
+					<h4>历史组</h4>
+					<p>教研组</p>
+				  </div>
+				</div>
+				    <p>所有老师能查看 <a class="btn btn-mini pull-right">更改</a></p>
+					<p>只有<a>孔丘</a>,<a>司马迁</a>,<a>司马光</a>,<a>陈寿</a>能修改 <a class="btn btn-mini pull-right">更改</a> </p>
+			</div>
+			<div class="well ">
+				<ul class="nav nav-list">
+  <li class="nav-header">
+    目录
+  </li>
+  <li>
+    <a href="#">孔丘老师 课件</a>
+  </li>
+  <li>
+    <a href="#">孔丘老师 教案</a>
+  </li>
+  <li>
+    <a href="#">司马迁老师 课件</a>
+  </li>
+  <li>
+    <a href="#">司马迁老师 教案</a>
+  </li>
+    <li>
+    <a href="#">司马光老师 课件</a>
+  </li>
+  <li>
+    <a href="#">司马光老师 教案</a>
+  <li>
+    <a href="#">陈寿老师 课件</a>
+  </li>
+    <li>
+    <a href="#">陈寿老师 教案</a>
+  </li>
+  <li>
+    <a href="#">相关页面</a>
+  </li>
+</ul>
+</div>
+		  </div>
+		  				
+        <div class="span9">
+
+          <div class="row-fluid">
+		  <h1>孔丘老师 课件</h1><hr />
+            <ul class="thumbnails">
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考</p>
+				</a>
+			  </li>
+			   <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			</ul>
+          </div><!--/row-->
+		   <div class="row-fluid">
+		    <h1>孔丘老师 教案</h1><hr />
+           <ul class="thumbnails">
+		      <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+		   </ul><!--thumbnails-->
+		   </div><!--/row-->
+		   <div class="row-fluid">
+		  <h1>司马迁老师 课件</h1><hr />
+            <ul class="thumbnails">
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考</p>
+				</a>
+			  </li>
+			   <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			</ul>
+          </div><!--/row-->
+		   <div class="row-fluid">
+		    <h1>司马迁老师 教案</h1><hr />
+           <ul class="thumbnails">
+		      <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+		   </ul><!--thumbnails-->
+		   </div>
+		   <div class="row-fluid">
+		  <h1>司马光老师 课件</h1><hr />
+            <ul class="thumbnails">
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考</p>
+				</a>
+			  </li>
+			   <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			</ul>
+          </div><!--/row-->
+		   <div class="row-fluid">
+		    <h1>司马光老师 教案</h1><hr />
+           <ul class="thumbnails">
+		      <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+		   </ul><!--thumbnails-->
+		   </div>
+		   <div class="row-fluid">
+		  <h1>孔丘老师 课件</h1><hr />
+            <ul class="thumbnails">
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考</p>
+				</a>
+			  </li>
+			   <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			</ul>
+          </div><!--/row-->
+		   <div class="row-fluid">
+		    <h1>孔丘老师 教案</h1><hr />
+           <ul class="thumbnails">
+		      <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+		   </ul><!--thumbnails-->
+		   </div>
+		   <div class="row-fluid">
+		  <h1>陈寿老师 课件</h1><hr />
+            <ul class="thumbnails">
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考</p>
+				</a>
+			  </li>
+			   <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			  <li class="span3">
+				<a class="thumbnail nounderline" href="downloads/history.pptx" href="downloads/history.pptx">
+				  <img src="img/thumb.png" alt="">
+				  <h5>第n章</h5>
+				  <p>这一章我们复习了高考.</p>
+				</a>
+			  </li>
+			</ul>
+          </div><!--/row-->
+		   <div class="row-fluid">
+		    <h1>陈寿老师 教案</h1><hr />
+           <ul class="thumbnails">
+		      <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+			  <li class="span2">
+				<a class="thumbnail" href="downloads/第一章作业题.doc">
+					<img src="img/archive.png" alt="" />
+			    </a>
+			  </li>
+		   </ul><!--thumbnails-->
+		   </div>
+		   	   <div class="row-fluid">
+		    <h1>相关页面</h1><hr />
+           <ul>
+		    <li>中国古代代史</li>
+			 <ul>
+			 <li><a href="#">中国古代史年代表</a></li>
+			 <li><a href="#">汉至元制度的演变</a></li>
+			 </ul>
+			<li>中国近代史</li>
+			<ul>
+			<li><a href="#">近代中国思想解放的潮流</a></li>
+			<li><a href="#">中国近代史年代表</a></li>
+			<li><a href="#">近代中国经济结构的变动</a></li>
+			 </ul>
+			<li>外国历史</li>
+			<ul>
+			<li><a href="#">二次工业革命</a></li>
+			<li><a href="#">外国历史年代表</a></li>
+			 </ul>
+			</ul>
+          </div><!--/row-->
+
+        </div><!--/span-->
+			
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; 北京阳光伟业科技发展有限公司 2012</p>
+      </footer>
+     </div><!--/container-inner-->
+    </div><!--/container-->
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/backbone.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+  </body>
+</html>
