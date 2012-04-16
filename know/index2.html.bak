@@ -71,6 +71,9 @@
 
     <div class="container whitepage">
 	 <div class="container-inner">
+	 <div class="row">
+
+	 </div>
       <div class="row">
 		  <div class="">
 			  <div class="hero-unit head">
@@ -79,7 +82,11 @@
 				<h1>高三历史（下）-袁腾飞</h1>
 
 				<p>在临近高考的最后100来天，袁腾飞老师将带着大家一起完成高中历史的复习工作。2月29新上传课件。</p>
+					 <div class="span2 offset10">
+364人认为有用<br/>45人收藏了本页
+</div>
 			  </div>
+
 		  </div>
 	 </div>
 	 <div class="row">
@@ -259,7 +266,7 @@
 					<img src="img/homework.png" alt="" />
 			    </a>
 			  </li>
-		   <ul><!--thumbnails-->
+		   </ul><!--thumbnails-->
           </div><!--/row-->
 		  <div class="row-fluid">
 		    <h1>学习资料</h1><hr />

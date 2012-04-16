@@ -816,8 +816,7 @@
 			  </li>
 		   </ul><!--thumbnails-->
 		   </div>
-        </div><!--/span-->
-				   <div class="row-fluid">
+		   	   <div class="row-fluid">
 		    <h1>相关页面</h1><hr />
            <ul>
 		    <li>中国古代代史</li>
@@ -839,6 +838,8 @@
 			</ul>
           </div><!--/row-->
 
+        </div><!--/span-->
+			
       </div><!--/row-->
 
       <hr>
